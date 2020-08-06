@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 //import Navigation from '../../molecules/Navigation/Navigation';
 import HeroSection from '../../HeroSection';
 import { SIGN_IN } from '../../../constants/routes'
-import { navigateTo } from 'gatsby'
-import FeaturesSection from '../../FeaturesSection'
+imprt { navigateTo } from 'gatsby'
 
 class Landing extends Component {
   render() {
@@ -21,14 +20,6 @@ class Landing extends Component {
             navigateTo(SIGN_IN);
           }}
         />
-        <FeaturesSection
-          bg="light"
-          textColor="dark"
-          size="md"
-          bgImage=""
-          title="Features"
-          subtitle="What's Available in Mackintosh Network"
-/>
       </>
     );
   }

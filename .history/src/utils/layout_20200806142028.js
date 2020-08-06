@@ -5,7 +5,6 @@ import getFirebase, { FirebaseContext } from './Firebase';
 import withAuthentication from './Session/withAuthentication';
 import SEO from './SEO';
 import '../styles/index.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Layout extends Component {
   state = {

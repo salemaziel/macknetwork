@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link, navigateTo } from 'gatsby';
+import { Link } from 'gatsby';
 import { LANDING, SIGN_IN, SIGN_UP } from '../../../../constants/routes';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-
 
 const NavigationNonAuth = () => (
   <Navbar bg="white" variant="light" expand="lg" className="">
@@ -14,7 +12,7 @@ const NavigationNonAuth = () => (
       <Navbar.Brand>
         <img
           className="d-inline-block align-top"
-          src=""
+          src={props.logo}
           alt="Logo"
           height="30"
         ></img>
@@ -28,15 +26,23 @@ const NavigationNonAuth = () => (
     <Navbar.Collapse id="navbar-nav" className="justify-content-end">
       <Nav className="mr-auto">
         <Nav.Item to="/about">
-          <Nav.Link as={Link} to="/about" active={false}>About</Nav.Link>
+          <Nav.Link active={false}>What is Delta 8</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/pricing">
+          <Nav.Link active={false}>Delta 8 Pricing</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/faq">
-          <Nav.Link as={Link} to="/faq" active={false}>FAQ</Nav.Link>
+          <Nav.Link active={false}>Delta 8 Boxes</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/#">
+          <Nav.Link active={false}>All Delta 8 Products</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/contact">
-          <Nav.Link as={Link} to="/contact" active={false}>Contact</Nav.Link>
+          <Nav.Link active={false}>Wholesale</Nav.Link>
         </Nav.Item>
 
 
@@ -102,7 +108,6 @@ const NavigationNonAuth = () => (
           Sign Up
         </Button>
         )}*/}
-
     </Navbar.Collapse>
   </Container>
 </Navbar>

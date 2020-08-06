@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link, navigateTo } from 'gatsby';
+import { Link } from 'gatsby';
 import { LANDING, SIGN_IN, SIGN_UP } from '../../../../constants/routes';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-
 
 const NavigationNonAuth = () => (
   <Navbar bg="white" variant="light" expand="lg" className="">
@@ -102,7 +100,12 @@ const NavigationNonAuth = () => (
           Sign Up
         </Button>
         )}*/}
-
+        <Button 
+          variant="success"
+          onClick={() => {
+            navigateTo(SIGN_IN);
+          }}
+        ></Button>
     </Navbar.Collapse>
   </Container>
 </Navbar>

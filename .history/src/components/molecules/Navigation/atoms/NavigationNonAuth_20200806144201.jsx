@@ -1,20 +1,17 @@
 import React from 'react';
-import { Link, navigateTo } from 'gatsby';
+import { Link } from 'gatsby';
 import { LANDING, SIGN_IN, SIGN_UP } from '../../../../constants/routes';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-
 
 const NavigationNonAuth = () => (
-  <Navbar bg="white" variant="light" expand="lg" className="">
+  <Navbar bg={props.bg} variant={props.variant} expand={props.expand} className={props.className}>
   <Container>
     <Nav.Item to={LANDING}>
       <Navbar.Brand>
         <img
           className="d-inline-block align-top"
-          src=""
+          src={props.logo}
           alt="Logo"
           height="30"
         ></img>
@@ -28,15 +25,23 @@ const NavigationNonAuth = () => (
     <Navbar.Collapse id="navbar-nav" className="justify-content-end">
       <Nav className="mr-auto">
         <Nav.Item to="/about">
-          <Nav.Link as={Link} to="/about" active={false}>About</Nav.Link>
+          <Nav.Link active={false}>What is Delta 8</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/pricing">
+          <Nav.Link active={false}>Delta 8 Pricing</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/faq">
-          <Nav.Link as={Link} to="/faq" active={false}>FAQ</Nav.Link>
+          <Nav.Link active={false}>Delta 8 Boxes</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/#">
+          <Nav.Link active={false}>All Delta 8 Products</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/contact">
-          <Nav.Link as={Link} to="/contact" active={false}>Contact</Nav.Link>
+          <Nav.Link active={false}>Wholesale</Nav.Link>
         </Nav.Item>
 
 
@@ -59,7 +64,7 @@ const NavigationNonAuth = () => (
         </Nav.Dropdown>*/}
       </Nav>
       <Nav className="mr-1">
-        {/*{auth.user && (
+        {auth.user && (
           <Nav.Dropdown id="dropdown" title="Account" alignRight={true}>
             <Nav.Item to="/dashboard">
               <Nav.Dropdown.Item active={false}>Dashboard</Nav.Dropdown.Item>
@@ -69,6 +74,7 @@ const NavigationNonAuth = () => (
               <Nav.Dropdown.Item active={false}>Settings</Nav.Dropdown.Item>
             </Nav.Item>
 
+            <Dropdown.Divider></Dropdown.Divider>
 
             <Nav.Item to="/auth/signout">
               <Nav.Dropdown.Item
@@ -88,10 +94,10 @@ const NavigationNonAuth = () => (
           <Nav.Item to={SIGN_IN}>
             <Nav.Link active={false}>Login</Nav.Link>
           </Nav.Item>
-        )}*/}
+        )}
       </Nav>
 
-      {/*{!auth.user && (
+      {!auth.user && (
         <Button
           className={navStyles.SignupButton}
           variant="success"
@@ -101,8 +107,7 @@ const NavigationNonAuth = () => (
         >
           Sign Up
         </Button>
-        )}*/}
-
+      )}
     </Navbar.Collapse>
   </Container>
 </Navbar>

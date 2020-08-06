@@ -21,7 +21,7 @@ class SignIn extends Component {
                 alt="logo"
               />
               <div className="login__content__header__title">
-                Mackintosh Network
+                Gatsby + Firebase Starter
               </div>
             </div>
             <div className="login__content__login-form">

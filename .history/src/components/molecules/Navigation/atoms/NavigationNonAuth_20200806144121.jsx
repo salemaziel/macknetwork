@@ -1,20 +1,17 @@
 import React from 'react';
-import { Link, navigateTo } from 'gatsby';
+import { Link } from 'gatsby';
 import { LANDING, SIGN_IN, SIGN_UP } from '../../../../constants/routes';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-
 
 const NavigationNonAuth = () => (
-  <Navbar bg="white" variant="light" expand="lg" className="">
+  <Navbar bg={props.bg} variant={props.variant} expand={props.expand} className={props.className}>
   <Container>
     <Nav.Item to={LANDING}>
       <Navbar.Brand>
         <img
           className="d-inline-block align-top"
-          src=""
+          src={props.logo}
           alt="Logo"
           height="30"
         ></img>
@@ -28,50 +25,59 @@ const NavigationNonAuth = () => (
     <Navbar.Collapse id="navbar-nav" className="justify-content-end">
       <Nav className="mr-auto">
         <Nav.Item to="/about">
-          <Nav.Link as={Link} to="/about" active={false}>About</Nav.Link>
+          <Nav.Link active={false}>What is Delta 8</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/pricing">
+          <Nav.Link active={false}>Delta 8 Pricing</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/faq">
-          <Nav.Link as={Link} to="/faq" active={false}>FAQ</Nav.Link>
+          <Nav.Link active={false}>Delta 8 Boxes</Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item to="/#">
+          <Nav.Link active={false}>All Delta 8 Products</Nav.Link>
         </Nav.Item>
 
         <Nav.Item to="/contact">
-          <Nav.Link as={Link} to="/contact" active={false}>Contact</Nav.Link>
+          <Nav.Link active={false}>Wholesale</Nav.Link>
         </Nav.Item>
 
 
-        {/*<Nav.Dropdown id="dropdown" title="More">
+        {/*<NavDropdown id="dropdown" title="More">
           <Nav.Item to="/affiliates">
-            <Nav.Dropdown.Item active={false}>Affiliates</Nav.Dropdown.Item>
+            <NavDropdown.Item active={false}>Affiliates</NavDropdown.Item>
           </Nav.Item>
 
           <Nav.Item to="/wholesale">
-            <Nav.Dropdown.Item active={false}>Wholesale</Nav.Dropdown.Item>
+            <NavDropdown.Item active={false}>Wholesale</NavDropdown.Item>
           </Nav.Item>
 
-          <Nav.Dropdown.Item
+          <NavDropdown.Item
             href="https://medium.com"
             target="_blank"
             active={false}
           >
             Blog
-          </Nav.Dropdown.Item>
-        </Nav.Dropdown>*/}
+          </NavDropdown.Item>
+        </NavDropdown>*/}
       </Nav>
       <Nav className="mr-1">
-        {/*{auth.user && (
-          <Nav.Dropdown id="dropdown" title="Account" alignRight={true}>
+        {auth.user && (
+          <NavDropdown id="dropdown" title="Account" alignRight={true}>
             <Nav.Item to="/dashboard">
-              <Nav.Dropdown.Item active={false}>Dashboard</Nav.Dropdown.Item>
+              <NavDropdown.Item active={false}>Dashboard</NavDropdown.Item>
             </Nav.Item>
 
             <Nav.Item to="/settings/general">
-              <Nav.Dropdown.Item active={false}>Settings</Nav.Dropdown.Item>
+              <NavDropdown.Item active={false}>Settings</NavDropdown.Item>
             </Nav.Item>
 
+            <Dropdown.Divider></Dropdown.Divider>
 
             <Nav.Item to="/auth/signout">
-              <Nav.Dropdown.Item
+              <NavDropdown.Item
                 active={false}
                 onClick={(e) => {
                   e.preventDefault();
@@ -79,19 +85,19 @@ const NavigationNonAuth = () => (
                 }}
               >
                 Sign out
-              </Nav.Dropdown.Item>
+              </NavDropdown.Item>
             </Nav.Item>
-          </Nav.Dropdown>
+          </NavDropdown>
         )}
 
         {!auth.user && (
           <Nav.Item to={SIGN_IN}>
             <Nav.Link active={false}>Login</Nav.Link>
           </Nav.Item>
-        )}*/}
+        )}
       </Nav>
 
-      {/*{!auth.user && (
+      {!auth.user && (
         <Button
           className={navStyles.SignupButton}
           variant="success"
@@ -101,8 +107,7 @@ const NavigationNonAuth = () => (
         >
           Sign Up
         </Button>
-        )}*/}
-
+      )}
     </Navbar.Collapse>
   </Container>
 </Navbar>

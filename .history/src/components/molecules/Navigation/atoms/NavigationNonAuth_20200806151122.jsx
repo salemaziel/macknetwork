@@ -102,7 +102,15 @@ const NavigationNonAuth = () => (
           Sign Up
         </Button>
         )}*/}
-
+        <Button 
+          className="button"
+          variant="success"
+          onClick={() => {
+            navigateTo(SIGN_IN);
+          }}
+        >
+          Sign In
+        </Button>
     </Navbar.Collapse>
   </Container>
 </Navbar>
