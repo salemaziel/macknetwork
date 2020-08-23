@@ -24,29 +24,24 @@ function FaqSection(props) {
         <Faq
           items={[
             {
-              question: "Integer ornare neque mauris?",
+              question: "What is the Mackintosh Network?",
               answer:
-                "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.",
+                "It is the central hub for Mackintosh friends and family to find and use self-hosted services.",
             },
             {
-              question: "Lorem ipsum dolor sit amet?",
+              question: "What is a 'self-hosted service'?",
               answer:
-                "Nunc nulla mauris, laoreet vel cursus lacinia, consectetur sit amet tellus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.",
+                "A self hosted service is one that is running on a server (aka computer) owned or controlled by an individual, rather than some big company or corporation. When you connect to the service, you are connecting to that individuals computer, with no one else sitting in between to collect your data or charge you fees."
             },
             {
-              question: "Suspendisse ut tincidunt?",
+              question: "What is the benefit of a self hosted service?",
               answer:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, metus et mattis ullamcorper. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.",
+                "The benefits include online privacy due to not having companies tracking, collecting, and selling your data, using services for free that are similar to other similar paid services, and having a direct line to the help line if you're having trouble with a service, because you already know the person running it.",
             },
             {
-              question: "Ut enim ad minim veniam?",
+              question: "Who is that person again, and how do I contact them?",
               answer:
-                "Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.",
-            },
-            {
-              question: "In velit mi, rhoncus dictum neque?",
-              answer:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+                "In this case it is mostly (actually, only) Salem Aziel. If you don't know how to contact him through family or some mutual friends, chances are you're not friends or family and won't be able to use the network at all",
             },
           ]}
         ></Faq>

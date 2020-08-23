@@ -76,14 +76,14 @@ class SignUpFormBase extends Component {
 
     return (
       <div>
-        <Input
+        {/*<Input
           name="username"
           value={username}
           onChange={this.onChange}
           type="text"
           required={true}
           labelName="Username"
-        />
+        />*/}
 
         <Input
           name="email"

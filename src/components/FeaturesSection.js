@@ -29,30 +29,23 @@ function FeaturesSection(props) {
               {
                 title: "Watch",
                 body:
-                  "Personal Netflix-like Media Hub",
+                  "Netflix-like Media Hub for your favorite shows",
                 image:
-                  "https://pmcvariety.files.wordpress.com/2019/04/netflix-tv-screen.jpg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1598156489/mack.network/netflix-tv-screen-sm_h3a4p7.jpg",
               },
               {
                 title: "Cloud",
                 body:
-                  "Personal Cloud Storage",
+                  "Personal Cloud Storage on all of your devices",
                 image:
-                  "https://prepr.org/wp-content/uploads/2019/06/Firm-Central-Cloud.png",
-              },
-              {
-                title: "VideoChat",
-                body:
-                  "Personal Video Conferencing",
-                image:
-                  "https://cdn.vox-cdn.com/thumbor/R5ericK4jly9ilvVmXUvoltuOXc=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/16011059/GVC_UI_50people_laptop_1024x652.png",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1598156485/mack.network/Firm-Central-Cloud_kbhhxm.png",
               },
               {
                 title: "More",
                 body:
-                  "And More To Come, when I Can Get To it",
+                  "And more to come, when I can get around to it",
                 image:
-                  "https://s27389.pcdn.co/wp-content/uploads/2019/12/predictions-for-cloud-in-2020-1024x440.jpeg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1598156493/mack.network/predictions-for-cloud-in-2020-800x450_zm1uwa.jpg",
               },
             ]}
           ></Features>

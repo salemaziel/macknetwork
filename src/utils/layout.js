@@ -6,6 +6,7 @@ import withAuthentication from './Session/withAuthentication';
 import SEO from './SEO';
 import '../styles/index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../components/footer';
 
 class Layout extends Component {
   state = {
@@ -39,6 +40,18 @@ const AppWithAuthentication = withAuthentication(
       <SEO {...seo} />
       {!hideNav && <Navigation />}
       {children}
+      {/*<Footer
+      bg="success"
+      textColor="light"
+      size="lg"
+      bgImage=""
+      bgImageOpacity="1"
+      logo="https://res.cloudinary.com/dexdumfqy/image/upload/v1598156762/mack.network/macknetwork-logo_hcuotz.png"
+      description="Mack Network"
+      copyright="Copyright Mackintosh Network"
+      />*/}
+      <Footer />
+
     </Fragment>
   ),
 );

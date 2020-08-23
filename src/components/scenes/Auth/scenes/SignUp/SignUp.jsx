@@ -5,6 +5,7 @@ import SignInFacebook from '../../molecules/SignInFacebook';
 import SignInTwitter from '../../molecules/SignInTwitter';
 import SignUpLink from '../../scenes/SignUp/atoms/SignUpLink';
 import SignInGithub from '../../molecules/SignInGithub';
+import {Link} from 'gatsby'
 
 class SignUp extends Component {
   render() {
@@ -14,27 +15,29 @@ class SignUp extends Component {
         <div className="register__content">
           <div className="register__content__inner">
             <div className="register__content__header">
+              <Link to="/">
               <img
                 className="register__content__header__logo"
-                src="https://user-images.githubusercontent.com/21834/34442516-fb1a1a3c-ecc2-11e7-8fe8-530435f22336.jpg"
+                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1598153101/mack.network/macknetwork-logo_pyqmvc.png"
                 alt="logo"
               />
+              </Link>
               <div className="register__content__header__title">
-                Mackintosh Network
-              </div>
+                Sign Up
+    </div>
             </div>
             <div className="register__content__fields">
               <div className="register__content__form">
                 <SignUpFormBase />
               </div>
-              <div className="register__content__or">
+              {/*<div className="register__content__or">
                 <span className="register__content__or__line" />
                 <span className="register__content__or__text">
                   or
                 </span>
                 <span className="register__content__or__line" />
-              </div>
-              <div className="register__content__providers">
+  </div>*/}
+              {/*<div className="register__content__providers">
                 <div className="register__content__providers--left">
                   <SignInGoogle />
                   <SignInGithub />
@@ -43,7 +46,7 @@ class SignUp extends Component {
                   <SignInTwitter />
                   <SignInFacebook />
                 </div>
-              </div>
+              </div>*/}
             </div>
             <div className="register__content__register">
               <SignUpLink />

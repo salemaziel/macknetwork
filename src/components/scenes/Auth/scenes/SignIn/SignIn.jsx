@@ -17,11 +17,11 @@ class SignIn extends Component {
             <div className="login__content__header">
               <img
                 className="login__content__header__logo"
-                src="https://user-images.githubusercontent.com/21834/34442516-fb1a1a3c-ecc2-11e7-8fe8-530435f22336.jpg"
+                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1598153101/mack.network/macknetwork-logo_pyqmvc.png"
                 alt="logo"
               />
               <div className="login__content__header__title">
-                Mackintosh Network
+                Sign In
               </div>
             </div>
             <div className="login__content__login-form">
@@ -37,16 +37,16 @@ class SignIn extends Component {
                 <span className="login__content__or__line" />
               </div>
               <div className="login__content__providers">
-                <div className="login__content__providers--left">
+                {/*<div className="login__content__providers--left">*/}
                   <SignInGoogle />
-                  <SignInGithub />
+                  {/*<SignInGithub />
                 </div>
-                <div className="login__content__providers--right">
-                  <SignInTwitter />
+                  <div className="login__content__providers--right">*/}
+                  {/*<SignInTwitter />*/}
                   <SignInFacebook />
-                </div>
+                {/*</div>*/}
               </div>{' '}
-              <div className="login__content__creator">
+              {/*<div className="login__content__creator">
                 <div className="login__content__creator__inner">
                   <div>
                     <iframe
@@ -67,7 +67,7 @@ class SignIn extends Component {
                     />
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
             <div className="login__content__register">
               <SignUpLink isRegister />

@@ -1,0 +1,17 @@
+
+#navbar-nav {
+    display: flex;
+}
+
+nav div ul li {
+    list-style-type: none;
+    color: #28a745;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    #navbar-nav {
+        display: none;
+    }
+}

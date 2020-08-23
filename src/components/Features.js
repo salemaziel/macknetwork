@@ -11,7 +11,7 @@ function Features(props) {
       {props.items.map((item, index) => (
         <Col
           xs={12}
-          lg={3}
+          lg={4}
           style={{
             display: "flex",
             alignItems: "stretch",

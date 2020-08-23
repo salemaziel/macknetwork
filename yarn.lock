@@ -12190,6 +12190,11 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
+react-simple-sidenav@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-simple-sidenav/-/react-simple-sidenav-2.0.0.tgz#99d2ca11faab5ae2aef9ee24d4b8a83553b140b6"
+  integrity sha512-k/lIo1SyTxHAfSMa9hJ+ShcN3innV4yXUcDgzeo3DHjcZgrEejO9H9pv2ENxFPk4ClCEwJ2izfi4WLFoki/XGw==
+
 react-style-singleton@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.1.0.tgz#7396885332e9729957f9df51f08cadbfc164e1c4"
