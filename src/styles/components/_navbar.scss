@@ -3,7 +3,7 @@
   height: 90px;
   padding: 0 50px;
   margin: 0 auto;
-  background-color: $color-main;
+  background-color: transparent;
   @include breakpoint('phone') {
     height: auto;
   }
