@@ -11,7 +11,7 @@ class Account extends Component {
         <AuthUserContext.Consumer>
           {authUser => (
             <div>
-              <h1>Account: {authUser.email}</h1>
+              <h3>Account: {authUser.email}</h3>
               <PasswordForget className="settings__password-forget" />
               <PasswordChange className="settings__password-change" />
               <LoginManagement

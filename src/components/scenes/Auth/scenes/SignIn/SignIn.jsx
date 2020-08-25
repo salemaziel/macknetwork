@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import SignInForm from '../../molecules/SignInForm';
 import SignInGoogle from '../../molecules/SignInGoogle';
 import SignInFacebook from '../../molecules/SignInFacebook';
@@ -7,6 +6,7 @@ import SignInTwitter from '../../molecules/SignInTwitter';
 import SignUpLink from '../../scenes/SignUp/atoms/SignUpLink';
 import PasswordForgetLink from '../../../../molecules/PasswordForget/atoms/PasswordForgetLink';
 import SignInGithub from '../../molecules/SignInGithub';
+import {Link} from 'gatsby'
 
 class SignIn extends Component {
   render() {
@@ -15,11 +15,13 @@ class SignIn extends Component {
         <div className="login__content">
           <div className="login__content__inner">
             <div className="login__content__header">
+              <Link to="/">
               <img
                 className="login__content__header__logo"
                 src="https://res.cloudinary.com/dexdumfqy/image/upload/v1598153101/mack.network/macknetwork-logo_pyqmvc.png"
                 alt="logo"
               />
+              </Link>
               <div className="login__content__header__title">
                 Sign In
               </div>
